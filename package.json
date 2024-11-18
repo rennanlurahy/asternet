@@ -1,0 +1,36 @@
+{
+  "name": "asternet",
+  "version": "1.0.0",
+  "description": "A tool for building servers and clients based on the Asterix protocol (All-purpose Structured EUROCONTROL Surveillance Information Exchange)",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "nodemon --exec ts-node -r tsconfig-paths/register ./src/main/index.ts -e ts",
+    "format": "prettier .",
+    "format:write": "prettier . --write",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "start": "ts-node -r tsconfig-paths/register ./src/main/index.ts",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "test:coverage": "jest --coverage"
+  },
+  "author": "Rennan Lurahy",
+  "license": "ISC",
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.26.0",
+    "@eslint/compat": "^1.2.3",
+    "@eslint/js": "^9.15.0",
+    "@types/jest": "^29.5.14",
+    "eslint": "^9.15.0",
+    "globals": "^15.12.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.7",
+    "prettier": "3.3.3",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.14.1-alpha.6"
+  }
+}
